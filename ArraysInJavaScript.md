@@ -80,8 +80,8 @@ They are higher-order methods, because they take other functions as arguments an
 
 Those array methods are also categorized into two categories:
 
-1. Mutating: These loop over the array and while applying the callback function, they also mutate the original array!
-2. Non-mutating: These iterate over the array and apply the callback function, but instead of mutating the original array, they return new array
+1. **Mutating:** These loop over the array and while applying the callback function, they also mutate the original array!
+2. **Non-mutating:** These iterate over the array and apply the callback function, but instead of mutating the original array, they return new array
 
 #### 1. `forEach()` method
 
@@ -142,3 +142,7 @@ const numbers = [1, 2, 3, 4];
 const sum = numbers.reduce((accumulator, element) => accumulator + element);
 console.log(sum)
 ```
+
+## Conclusion
+
+Arrays are a fundamental and versatile feature in JavaScript, offering an essential structure to store and manipulate collections of data. From simple array creation using literals to more advanced methods like `Array.of()` and `Array.from()`, JavaScript arrays provide a range of ways to handle different types of data. By mastering array manipulation through loops or modern methods like `forEach()`, `map()`, `filter()`, and `reduce()`, you can efficiently perform complex operations. Understanding these array features is key to becoming proficient in JavaScript, allowing you to write cleaner, more concise, and powerful code.
