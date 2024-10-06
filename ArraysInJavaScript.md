@@ -22,7 +22,7 @@ There are multiple ways to create arrays in JavaScript, I will go over few of th
 
 ### 1. Using array literals `[]`
 
-In JavaScript, you can simply create an array by assigning `[]` to a variable or a constant
+In JavaScript, you can simply create an array by assigning `[]` to a variable or a constant.
 
 ```javascript
 const numbers = [1, 2, 3];
