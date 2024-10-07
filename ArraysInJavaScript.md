@@ -132,7 +132,7 @@ console.log(evenNumber); // [2, 4]
 
 #### 4. `reduce()` method
 
-`reduce()` method is a bit different from those above, it is used to reduce the elements of an array into a single value, it is neither mutating because it does not change the original array nor non-mutating because it does not return a new array. Instead it returns a single value, you will use it when you want a single value from all elements of an array like sum, average, maximum or minimum just to name a few!
+`reduce()` method is a bit different from those above. Think of it as a way to combine all the elements in an array into a single value by applying a function to each element, one by one. It returns a single value from all elements of the array, you will use it when you want a single value from all elements of an array like sum, average, maximum or minimum just to name a few!
 
 The syntax is a also different
 `Array.reduce(function(accumulator, element[, index, targetArray]) [, initialValue])`
