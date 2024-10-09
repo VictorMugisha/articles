@@ -20,11 +20,52 @@ Let's get started in exploring the world of JavaScript functions!
 Functions in JavaScript are reusable blocks of code designed to perform a specific task. Think of them as little machines that take input, process it, and produce an output. They are a fundamental concept in programming and serve several important purposes:
 
 ### Reusability
+
 Functions allow you to write a piece of code once and use it multiple times throughout your program. This saves time and reduces the amount of code you need to write.
 
 ### Abstraction
+
 Functions allow you to hide the details of how a task is performed. You can call a function without needing to know how it works internally. This makes your code more organized and easier to understand.
 
 ### Modularity
+
 Functions allow you to break down complex problems into smaller, more manageable pieces. This modular approach makes your code more flexible and easier to maintain.
 
+## 2. How to declare and define functions
+
+There are sevelar ways of creating and defining functions in JavaScript, we have different types of functions which also determines how the function is created according to it's type.
+
+Before we dive in on how to define functions, there are few things all functions have in common that you should know first:
+
+1. **Function name:** Almost every function in JavaScript must have a name, otherwise, it wouldn't really be usable. Not all functions have names though, some special types of functions can be created and used without names (we will see this in other chapter).
+2. **Optional parameters:** These are inputs that a function can receive and use them to produce output. A function can receive one or more parameters depending on what it does and the input it needs, but they are optional which means you can create a function that produce output without input (sounds interesting!)
+3. **Function body:** Every function in JavaScript should have a body. This is a block of statement enclosed in curly braces `{}` after the function parameters. It is what a function uses to process the input and produce the result (output).
+4. **`function` keyword:** Again almost every function in JavaScript are defined using the `function` keyword, but not all of them.
+5. **`return` statement:** The `return` statement is used in a function to make the function produce the output, this is how the function produces the result of its calculation or the output of its operation(s). This is statement is also optional in JavaScript, when omitted, a function will return `undefined`
+6. **Function signature:** This is nothing than the combination of a `function` keyword, `functionName` and the list of parameters. If you take all these three parts together, they form what we call **function signature**.
+7. **Function call:** Some people call it function invokation, but I prefer function call. This is when you have defined your function, and then you want to use that function. To do this you write `functionName(optionalParameters)` and this will give you the result from the function. For example, `printValue('hello')`, this statement calls the function called `printValue` and pass `'hello'` as parameter to that function.
+
+### a. Functions with `function` keyword
+
+This is more popular and straightforward way of creating a function in JavaScript using the `function` keyword.
+
+```javascript
+// Syntax
+function functionName(parameters) {
+  // function body
+}
+```
+
+This is the basic syntax of creating a function. The `functionName` can be anything you want just like a variable name, but it is a good practice to name the function after what it does. For example, if a function calcualates the sum of two numbers, you can name it `addTwoNumbers` or `addNumbers` so that whoever reads the name of the function, they immediately get a basic idea of what your function does.
+
+Let's see a simple example to help you understand this syntax:
+
+```javascript
+function addNumbers(number1, number2) {
+  return number1 + number2;
+}
+
+console.log(addNumbers(3, 4)); // 7
+```
+
+In this example, we defined a function called `addNumbers` that accepts two inputs `number1` and `number2`, and return their sum. Then we called the function with `3` and `4` hence the function will give us `7` in the console.
