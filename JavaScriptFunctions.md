@@ -198,6 +198,10 @@ Understanding functions is crucial for JavaScript development. They allow you to
 
 Practice creating and using functions in your projects to solidify your understanding.
 
+I know this wasn't all about functions, but I hope it gave you a good overview of what functions are and how they work in JavaScript.
+
+In my next articles, I will be breaking down some of the advanced concepts of functions such as `closures`, `first-class functions`, `higher-order functions`, `currying`, `partial application`, `memoization`, etc. and how they work behind the scenes.
+
 If you found this article helpful, please leave a comment and share it with your friends and colleagues. 
 And if you wish me to write about something specific, please let me know in the comments below.
 
