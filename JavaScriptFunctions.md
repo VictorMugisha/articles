@@ -69,3 +69,131 @@ console.log(addNumbers(3, 4)); // 7
 ```
 
 In this example, we defined a function called `addNumbers` that accepts two inputs `number1` and `number2`, and return their sum. Then we called the function with `3` and `4` hence the function will give us `7` in the console.
+
+### b. Arrow Functions
+
+Arrow functions, introduced in ES6, provide a more concise syntax for writing functions. They are especially useful for short, simple functions.
+
+```javascript
+// Arrow function syntax
+const functionName = (parameters) => {
+  // function body
+};
+
+// Example
+const multiplyNumbers = (a, b) => {
+  return a * b;
+};
+
+console.log(multiplyNumbers(5, 3)); // 15
+```
+
+For simple, one-line functions, you can use an even more concise syntax:
+
+```javascript
+const square = (x) => x * x;
+console.log(square(4)); // 16
+```
+
+### c. Function Expressions
+
+Function expressions involve assigning a function to a variable. This can be done with either traditional function syntax or arrow functions.
+
+```javascript
+// Traditional function expression
+const greet = function (name) {
+  return `Hello, ${name}!`;
+};
+
+// Arrow function expression
+const greetArrow = (name) => `Hello, ${name}!`;
+
+console.log(greet("Alice")); // Hello, Alice!
+console.log(greetArrow("Bob")); // Hello, Bob!
+```
+
+## 3. Function Parameters and Arguments
+
+Parameters are variables listed in the function definition, while arguments are the actual values passed to the function when it's called.
+
+```javascript
+function introduce(name, age) {
+  console.log(`My name is ${name} and I'm ${age} years old.`);
+}
+
+introduce("Charlie", 30); // My name is Charlie and I'm 30 years old.
+```
+
+### Default Parameters
+
+ES6 introduced default parameters, allowing you to specify default values for parameters if no argument is provided.
+
+```javascript
+function greetUser(name = "Guest") {
+  console.log(`Welcome, ${name}!`);
+}
+
+greetUser(); // Welcome, Guest!
+greetUser("David"); // Welcome, David!
+```
+
+### Rest Parameters
+
+The rest parameter syntax allows a function to accept an indefinite number of arguments as an array.
+
+```javascript
+function sum(...numbers) {
+  return numbers.reduce((total, num) => total + num, 0);
+}
+
+console.log(sum(1, 2, 3, 4)); // 10
+```
+
+## 4. Return Values
+
+Functions can return values using the `return` statement. If no return statement is used, the function returns `undefined`.
+
+```javascript
+function calculateArea(width, height) {
+  return width * height;
+}
+
+const area = calculateArea(5, 3);
+console.log(area); // 15
+```
+
+## 5. Function Scope
+
+Variables declared inside a function are only accessible within that function, creating a local scope.
+
+```javascript
+function exampleScope() {
+  const localVar = "I'm local";
+  console.log(localVar); // I'm local
+}
+
+exampleScope();
+// console.log(localVar); // This would cause an error
+```
+
+## 6. Higher-Order Functions
+
+Higher-order functions are functions that can take other functions as arguments or return functions.
+
+```javascript
+function applyOperation(x, y, operation) {
+  return operation(x, y);
+}
+
+const add = (a, b) => a + b;
+const multiply = (a, b) => a * b;
+
+console.log(applyOperation(5, 3, add)); // 8
+console.log(applyOperation(5, 3, multiply)); // 15
+```
+
+## Conclusion
+
+Understanding functions is crucial for JavaScript development. They allow you to write reusable, modular, and efficient code. As you continue your JavaScript journey, you'll find that mastering functions opens up powerful programming paradigms and patterns.
+
+Practice creating and using functions in your projects to solidify your understanding. Happy coding!
